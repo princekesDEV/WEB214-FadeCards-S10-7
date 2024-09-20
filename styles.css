@@ -1,0 +1,53 @@
+*{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    background: linear-gradient(90deg, red, blue); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+    font-size: 40px;
+}
+
+div{
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div > div{
+    height: 40vh;
+    width: 14vw;
+    transition: opacity 0.3s ease;
+}
+
+div > div:hover{
+    opacity: 1;
+}
+
+div > div:not(:hover){
+    opacity: 0.5;
+}
+
+div div:nth-child(1){
+    background-color: yellow;
+    border: 2px solid rgb(216, 216, 88);
+}
+
+div div:nth-child(2){
+    background-color: pink;
+    border: 2px solid rgb(208, 109, 126);
+}
+
+div div:nth-child(3){
+    background-color: red;
+    border: 2px solid rgb(121, 59, 59);
+}
+
+div div:nth-child(4){
+    background-color: green;
+    border: 2px solid rgb(4, 101, 4);
+}
